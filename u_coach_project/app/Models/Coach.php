@@ -13,4 +13,8 @@ class Coach extends Model
     {
         return $this->belongsTo(User::class);
     }
+    public function clients()
+    {
+        return $this->belongsToMany(Client::class);
+    }
 }
